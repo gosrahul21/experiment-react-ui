@@ -24,8 +24,10 @@
 .menu__open__icon {
 
     cursor: pointer;
-   
+    color:white;
     z-index: 51;
+    transition: 1s all;
+    transition-timing-function: ease-in-out;
 }
 
 .navigation__list{
@@ -61,8 +63,10 @@
 
 
 .scale-up-hor-left {
-	-webkit-animation: scale-up-hor-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-hor-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	    -webkit-animation: scale-up-hor-left 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	    animation: scale-up-hor-left 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        transition-timing-function: ease-out;
+        
 }
 
  @-webkit-keyframes scale-up-hor-left {
@@ -95,9 +99,10 @@
   }
   
   .scale-out-hor-left {
-	-webkit-animation: scale-out-hor-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: scale-out-hor-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
+	-webkit-animation: scale-out-hor-left 0.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: scale-out-hor-left 0.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            transition-timing-function: ease-out;
+        }
 
  @-webkit-keyframes scale-out-hor-left {
     0% {
@@ -137,5 +142,11 @@
       position:absolute;
       top:0;
       left:0;
+      padding:10px;
       z-index: 55;
+  }
+
+  .nav__icon:active {
+      background-color: rgba(128, 128, 128, 0.555);;
+      border-radius:50%;
   }

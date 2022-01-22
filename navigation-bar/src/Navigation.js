@@ -29,7 +29,7 @@ export default function Navigation() {
    {<div className={`navigation__core`}>
 
         <div onClick={(e)=>e.stopPropagation()} className='nav__icon'>
-            {showNav&&<MenuOpenIcon fontSize="large" onClick={()=>setShowNav(false)} className='menu__open__icon' />}
+            {showNav&&<MenuOpenIcon color="white" fontSize="large" onClick={()=>setShowNav(false)} className='menu__open__icon' />}
             {!showNav&&<MenuIcon fontSize='large' className='menu__icon' onClick={()=>setShowNav(true)} />}
         </div>
         
