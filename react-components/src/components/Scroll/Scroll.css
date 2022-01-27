@@ -1,0 +1,25 @@
+.scroll-container{
+
+    width:100%;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    height:100vh;
+}
+
+.scroll{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    background-color: red;
+    scroll-snap-align: start;
+    background-size:cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
+
+
+.scroll > h1 {
+    color:white;
+}

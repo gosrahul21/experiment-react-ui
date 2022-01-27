@@ -78,8 +78,8 @@
 }
 
 .plate{
-    height:200px;
-    width:350px;
+    height:250px;
+    width:400px;
     background-color: white;
     border-radius: 50%;
     transform: translateY(-105px);
