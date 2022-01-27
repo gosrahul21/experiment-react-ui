@@ -1,0 +1,11 @@
+.scroll__container{
+    width:100%;
+
+}
+
+.progress__bar{
+    position:sticky;
+    top:0;
+    height:5px;
+    background-color: yello;
+}
